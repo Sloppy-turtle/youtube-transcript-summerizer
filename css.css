@@ -1,0 +1,21 @@
+body{  
+    background-image: url('https://wallpapers.com/images/hd/cute-gaming-8db6wfdhvmfunh00.jpg');
+    background-size: cover;
+    font-family: Ariel, sans-serif;
+    text-align: center;
+}
+#transcript-display, #summary-display{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#transcript-display{
+    background-color:white;
+}
+#summary-display{
+    background-color:rgb(145, 156, 225)
+}
