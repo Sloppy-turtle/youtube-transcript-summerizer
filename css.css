@@ -1,21 +1,77 @@
-body{  
+/* Basic reset and style improvements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-image: url('https://wallpapers.com/images/hd/cute-gaming-8db6wfdhvmfunh00.jpg');
     background-size: cover;
-    font-family: Ariel, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
+    color: #333;
 }
-#transcript-display, #summary-display{
+
+#container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#video-url {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#summarize-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #5C6BC0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#summarize-btn:hover {
+    background-color: #3f51b5;
+}
+
+.content-box {
     margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 5px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #ddd;
+    background-color: white;
+    word-wrap: break-word;
 }
-#transcript-display{
-    background-color:white;
+
+#summary-display {
+    background-color: #91a0e1;
 }
-#summary-display{
-    background-color:rgb(145, 156, 225)
+
+#loading-indicator {
+    font-size: 1.2rem;
+    color: #5C6BC0;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
