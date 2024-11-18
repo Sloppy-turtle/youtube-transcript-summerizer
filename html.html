@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Transcript Summarizer</title>
+    <title>YouTube Transcript Summarizer</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
-    
-    <h1>Youtube Transcript Summarizer</h1>
-    <form>
-        <input type="text" id="video-url" placeholder="Enter Youtube video URL">
-        <button id="summarize-btn">Summarize</button>
-    </form>
-    <div id="transcript-display"></div>
-    <div id="summary-display"></div>
+    <div id="container">
+        <h1>YouTube Transcript Summarizer</h1>
+        <form id="video-form">
+            <input type="text" id="video-url" placeholder="Enter YouTube video URL" required />
+            <button id="summarize-btn" type="submit">Summarize</button>
+        </form>
+        <div id="loading-indicator" class="hidden">Loading...</div>
+        <div id="transcript-display" class="content-box"></div>
+            
+        <div id="summary-display" class="content-box"></div>
+        
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
